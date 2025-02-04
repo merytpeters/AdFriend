@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "AdFriend",
+  "version": "1.0",
+  "description": "AdFriend is a Chrome browser extension that blocks ad and displays other exciting features",
+  "permissions": "",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://*/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {}
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
