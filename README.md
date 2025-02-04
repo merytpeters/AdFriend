@@ -8,4 +8,5 @@ This is a Chrome extension that intercepts and replaces ad elements on web pages
 
 ## Technology
 **Javascript**
+
 **React**
