@@ -5,26 +5,26 @@
   "description": "AdFriend is a Chrome browser extension that blocks ad and displays other exciting features",
   "permissions": ["storage", "activeTab", "scripting", "declarativeNetRequest"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.js"
   },
   "declarative_net_request": {
     "rule_resources": [
       {
         "id": "block_ads",
         "enabled": true,
-        "path": "rules.json"
+        "path": "public/rules.json"
       }
     ]
   },
   "host_permissions": ["https://*/*"],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/popup/popup.html",
     "default_icon": {}
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["src/content.js"]
     }
   ]
 }

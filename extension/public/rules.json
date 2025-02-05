@@ -22,17 +22,6 @@
         }
     },
     {
-        "id": 2,
-        "priority": 1,
-        "action": {
-            "type": "block"
-        },
-        "condition": {
-            "urlFilter": "||pagead2.googlesyndication.com",
-            "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest"]
-        }
-    },
-    {
         "id": 3,
         "priority": 1,
         "action": {
@@ -370,6 +359,17 @@
         },
         "condition": {
             "urlFilter": "||infolinks.com",
+            "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest"]
+        }
+    },
+    {
+        "id": 34,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||pagead2.googlesyndication.com",
             "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest"]
         }
     }
